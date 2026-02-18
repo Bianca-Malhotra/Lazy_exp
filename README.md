@@ -5,19 +5,13 @@
 
 **lazy_exp** is a React-based dashboard application that demonstrates **code splitting using React.lazy() and Suspense** for performance optimization.
 
-The project dynamically loads the Dashboard component to reduce the initial bundle size and improve rendering efficiency. It also features a styled UI card layout with pastel tones and a red gradient background.
+The project dynamically loads the Dashboard component to reduce the initial bundle size means the sub files in react frameworks like the javascript, css, src file and improve rendering efficiency. It also features a styled UI card layout with pastel tones and a red gradient background.
 ---
 <img width="1918" height="1033" alt="Screenshot 2026-02-18 113409" src="https://github.com/user-attachments/assets/1005e0b7-eca9-4c48-8b1e-5a5ec081e1eb" />
 
-📸 Output Preview
-
-Responsive dashboard card
-
-Smooth loading fallback during lazy import
-
-Profession displayed horizontally inside styled container
-
-
+---
+This demonstrates the lazy loading before the dashboard appears(The fallback UI)
+<img width="1416" height="500" alt="image" src="https://github.com/user-attachments/assets/18c269f0-4bef-4bf4-a115-783690a149f9" />
 ---
 
 # 🚀 Lazy Loading Portfolio Dashboard (lazy_exp) – PART 2
@@ -27,16 +21,7 @@ Profession displayed horizontally inside styled container
 ## 📌 Project Description
 
 **lazy_exp (Part 2)** is an enhanced version of the React portfolio dashboard that demonstrates advanced **code splitting using `React.lazy()` and `Suspense`** for performance optimization.
-
-This version improves:
-
-* UI styling and animations
-* Page-based lazy loading
-* Navigation experience
-* Suspense fallback design
-* Modular folder structure
-
-
+---
 
 <img width="1908" height="703" alt="Screenshot 2026-02-18 111712" src="https://github.com/user-attachments/assets/f3540a6e-9e7f-48f7-ab1b-432ff2355a1e" />
 
