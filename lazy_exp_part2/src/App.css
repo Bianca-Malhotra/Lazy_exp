@@ -1,0 +1,116 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Background - Changed to Dark Pink Palette */
+.matrix-theme {
+  background: radial-gradient(circle, #4D002B 0%, #210012 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.center-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card - Changed to Bright Cream */
+.card {
+  width: 500px;
+  max-width: 90%;
+  padding: 50px;
+  border-radius: 20px;
+  background: #FFF9F2; /* Cream 50 */
+  box-shadow: 0 20px 60px rgba(242, 92, 5, 0.2);
+  border: 2px solid #F25C05; /* Orange 800 */
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 0 25px 80px rgba(255, 0, 128, 0.4); /* Pink Glow */
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #210012; /* Dark Pink Text */
+  text-align: center;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4D002B;
+  text-align: center;
+}
+
+/* Text Glow - Changed to Hot Pink */
+.card h2 span {
+  color: #FF0080;
+  text-shadow: 0 0 8px #FF0080;
+}
+
+/* Fullscreen Loader - Middle of Page */
+.fullscreen-loader {
+  height: 100vh;
+  width: 100vw;
+  background: #210012;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader Card - Orange and Pink Theme */
+.loader-card {
+  background: #110009;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  border: 3px solid #F25C05; /* Orange Border */
+  box-shadow: 0 0 60px #F25C05;
+  color: #FF0080; /* Pink Text */
+  animation: pulseGlow 1.2s infinite alternate;
+}
+
+.buffer-circle {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #33001a;
+  border-top: 6px solid #F25C05; /* Orange Spinner */
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  animation: spin 1s linear infinite;
+}
+
+.warning-text {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #F25C05;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 25px rgba(242, 92, 5, 0.5); }
+  to { box-shadow: 0 0 60px #F25C05; }
+}
+
+.fade-in {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
